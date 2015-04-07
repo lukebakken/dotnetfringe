@@ -30,4 +30,5 @@ node_modules
 .svn
 tmp/**
 .sass-cache
+js/reveal.min.js
 
