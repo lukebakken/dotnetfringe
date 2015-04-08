@@ -136,26 +136,41 @@
           </section>
           <section>
             <h3>Hosting</h3>
-            <p>GitHub</p>
             <p><img src="images/github.png"></p>
+            <p><img src="images/riak-dotnet-client-repo-last-commit-checked.png"></p>
           </section>
           <section>
             <h3>Continuous Integration</h3>
             <p><a href="https://travis-ci.org/basho/riak-dotnet-client">Travis CI</a></p>
             <p>TeamCity</p>
+            <p><img src="images/travis-ci-failed.png"></p>
           </section>
           <section>
             <h3>Issue / Feature Tracking</h3>
-            <p>GitHub</p>
             <p><img src="images/github.png"</img></p>
+            <aside class="notes">
+              Many old open issues, PRs. Closed some PRs, politely
+            </aside>
           </section>
           <section>
             <h3>Build Process</h3>
-            <p>script explosion</p>
+            <p>Different scripts for each task:</p>
+            <p>
+              <ul>
+                <li>Building project</li>
+                <li>Publish release (manual steps)</li>
+                <li>Rebuild message classes from protobuf message files</li>
+              </ul>
+            </p>
           </section>
           <section>
-            <h3>Riak 1.4 / Riak 2.0 Support</h3>
-            <p></p>
+            <h3>Riak Support</h3>
+            <p>
+              <ul>
+                <li>1.4 series: 100%</li>
+                <li>2.0 series: 50%</li>
+              </ul>
+            </p>
           </section>
         </section>
         <!-- state of the code -->
@@ -203,18 +218,60 @@
                 <li>FxCop (if present)</li>
               </ul>
             </p>
+            <aside class="notes">
+              <ul>
+                <li>StyleCop redistributable - committed</li>
+                <li>FxCop 12 part of VS, must have VS</li>
+                <li>Both catch issues early</li>
+                <li>FxCop insight into IDisposable</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Test Suite</h3>
-            <p></p>
+            <p><img src="images/nunit.gif"></p>
+            <aside class="notes">
+              <ul>
+                <li>nondeterministic tests / Riak / waiting</li>
+                <li>NUnit works / VS integration / no need to change</li>
+                <li>install everything via NuGet, incl runners</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Support Scripts</h3>
-            <p></p>
+            <p><a href="https://github.com/basho/riak-client-tools">Riak Client Tools</a></p>
+            <p>
+              <ul>
+                <li>Set up Riak cluster</li>
+                <li>SSL Certificate Authority</li>
+              </ul>
+            </p>
+            <aside class="notes">
+              <ul>
+                <li>helps contributors</li>
+                <li>set up Riak cluster easily</li>
+                <li>generate SSL certs for Riak TLS testing</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Automation</h3>
             <p><img src="images/big-red-button.png"></p>
+            <pre><code class="nohighlight">
+C:\Users\lbakken\Projects\basho\riak-dotnet-client
+[develop]$ .\make.ps1 -Target Publish -VersionString v2.0.1
+            </code></pre>
+            <p><a href="https://www.nuget.org/packages/RiakClient/">NuGet</a></p>
+            <p><a href="https://github.com/basho/riak-dotnet-client/releases">GitHub</a></p>
+            <aside class="notes">
+              <ul>
+                <li>tag</li>
+                <li>create &amp; push NuGet</li>
+                <li>create zip &amp; push <a href="https://github.com/basho/riak-dotnet-client/releases">GitHub release</a></li>
+                <li>improvements - patch / maintenance releases</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Repository</h3>
@@ -231,8 +288,21 @@
           <section>
             <h3>NuGet</h3>
           </section>
+          <section>
+            <h3>Riak 2.0</h3>
+          </section>
+          <section>
+            <h3>Misc</h3>
+          </section>
+          <section>
+            <h3>Documentation</h3>
+          </section>
         </section>
         <!-- end user improvements -->
+
+        <section>
+          <h2>Summary</h2>
+        </section>
 
       </div> <!-- slides -->
     </div> <!-- reveal -->
