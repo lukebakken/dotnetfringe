@@ -18,6 +18,8 @@
 		<!-- link rel="stylesheet" href="css/theme/solarized.css" id="theme" -->
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
+		<link rel="stylesheet" href="css/dotnetfringe.css" id="theme-dotnetfringe">
+
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -110,7 +112,7 @@ Basho's supported clients for .NET and NodeJS
             <h2>State of the Code</h2>
           </section>
           <section>
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <p>Apache 2.0</p>
             <pre><code class="nohighlight">
 Copyright [2011] [Distributed Nonsense]
@@ -129,33 +131,91 @@ limitations under the License.
             </code></pre>
           </section>
           <section>
-            <h2>Hosting</h2>
+            <h3>Hosting</h3>
             <p>GitHub</p>
-            <p><img src="images/github.png"</img></p>
+            <p><img src="images/github.png"></p>
           </section>
           <section>
-            <h2>Continuous Integration</h2>
-            <p>Travis CI</p>
+            <h3>Continuous Integration</h3>
+            <p><a href="https://travis-ci.org/basho/riak-dotnet-client">Travis CI</a></p>
             <p>TeamCity</p>
           </section>
           <section>
-            <h2>Issue / Feature Tracking</h2>
+            <h3>Issue / Feature Tracking</h3>
             <p>GitHub</p>
             <p><img src="images/github.png"</img></p>
           </section>
           <section>
-            <h2>Build Process</h2>
-            <p></p>
+            <h3>Build Process</h3>
+            <p>script explosion</p>
           </section>
           <section>
-            <h2>Riak 1.4 / Riak 2.0 Support</h2>
+            <h3>Riak 1.4 / Riak 2.0 Support</h3>
             <p></p>
           </section>
         </section>
 
         <section>
-          <h2>Improvements</h2>
-          <p></p>
+          <section>
+            <h2>Developer Improvements</h2>
+          </section>
+          <section>
+            <h3>Build Process</h3>
+            <p>Clone It And Build It™</p>
+            <p><img src="images/winning.jpg"></p>
+          </section>
+          <section>
+            <p>
+              <ul>
+                <li>Windows
+                  <ul>
+                    <li>Dependencies: .NET 4 Framework, Powershell</li>
+                    <li>Build: make.cmd/make.ps1 &amp; MSBuild</li>
+                  </ul>
+                </li>
+                <li>Mono
+                  <ul>
+                    <li>Dependencies: Mono 2.10, GNU Make</li>
+                    <li>Build: make &amp; xBuild</li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+            <aside class="notes">
+              <ul>
+                <li>common build targets file</li>
+                <li>msbuild / xbuild default</li>
+                <li>GNU make / PowerShell driver</li>
+                <li>minimal deps - git only for rel builds</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h3>Code Analysis</h3>
+            <p>
+              <ul>
+                <li>StyleCop</li>
+                <li>FxCop (if present)</li>
+              </ul>
+            </p>
+          </section>
+          <section>
+            <h3>Test Suite</h3>
+            <p></p>
+          </section>
+          <section>
+            <h3>Support Scripts</h3>
+            <p></p>
+          </section>
+          <section>
+            <h3>Automation</h3>
+            <p><img src="images/big-red-button.png"></p>
+          </section>
+          <section>
+            <h3>Repository</h3>
+            <p><img src="images/BFG9000.png"></p>
+            <p><a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG for Git repositories</p>
+          </section>
         </section>
 
 			</div>
