@@ -52,79 +52,87 @@
 				</section>
 
         <section>
-          <section>
-            <h2>Introduction</h2>
-            <ul>
-              <li class="fragment" data-fragment-index="0">Iron Foundry</li>
-              <li class="fragment" data-fragment-index="1">Riak .NET Client</li>
-              <li class="fragment" data-fragment-index="2">Riak NodeJS Client</li>
-            </ul>
-            <aside class="notes">
-  Involved with: Iron Foundry - C#/.NET for Cloud Foundry PaaS
-  Basho's supported clients for .NET and NodeJS
-            </aside>
-          </section>
+          <h2>Introduction</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="0">Iron Foundry</li>
+            <li class="fragment" data-fragment-index="1">Riak .NET Client</li>
+            <li class="fragment" data-fragment-index="2">Riak NodeJS Client</li>
+          </ul>
+          <aside class="notes">
+Involved with: Iron Foundry - C#/.NET for Cloud Foundry PaaS
+Basho's supported clients for .NET and NodeJS
+          </aside>
+        </section>
 
-          <section>
-            <h3>Stewardship</h3>
-            <p>Meeting the needs of your users</p>
-            <ul>
-              <li class="fragment" data-fragment-index="0">End-Users</li>
-              <li class="fragment" data-fragment-index="1">Contributors</li>
-              <li class="fragment" data-fragment-index="2">Owners - you!</li>
-            </ul>
-            <aside class="notes">
-            </aside>
-          </section>
+        <section>
+          <h3>Stewardship</h3>
+          <p>Meeting the needs of your users</p>
+          <ul>
+            <li class="fragment" data-fragment-index="0">End-Users</li>
+            <li class="fragment" data-fragment-index="1">Contributors</li>
+            <li class="fragment" data-fragment-index="2">Owners - you!</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
 
-          <section>
-            <h3>Corrugated Iron History</h3>
-            <ul>
-              <li>2011 01 - Started by Jeremiah Peschka and OJ Reeves</li>
-              <li>2013 09 - 1.4.2 release</li>
-              <li>2014 05 - Corrugated Iron needs new home</li>
-              <li>2015 01 - Alex Moore &amp; myself on project full-time</li>
-              <li>2015 03 - v2.0.0 release</li>
-            </ul>
-            <aside class="notes">
-            </aside>
-          </section>
+        <section>
+          <p><img src="images/riak-logo-color.png"></p>
+          <ul>
+            <li>Key/Value store</li>
+            <li>Map/Reduce, Indexing, Document Querying via Solr</li>
+            <li>CRDTs (conflict-free server-side data types)</li>
+            <li>Masterless architecture</li>
+            <li>High availability in failure scenarios</li>
+          </ul>
+        </section>
 
-          <section>
-            <h3>Transferring Ownership</h3>
-            <img src="images/grand-canyon-group-hike.jpg">
-          </section>
+        <section>
+          <h3>Corrugated Iron History</h3>
+          <ul>
+            <li>2011 01 - Started by Jeremiah Peschka and OJ Reeves</li>
+            <li>2013 09 - 1.4.2 release</li>
+            <li>2014 05 - Corrugated Iron needs new home</li>
+            <li>2015 01 - Alex Moore &amp; myself on project full-time</li>
+            <li>2015 03 - v2.0.0 release</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
 
-          <section>
-            <h3>Transferring Ownership</h3>
+        <section>
+          <h3>Transferring Ownership</h3>
+          <img src="images/grand-canyon-group-hike.jpg">
+        </section>
+
+        <section>
+          <h3>Transferring Ownership</h3>
+          <ul>
+            <li class="fragment">GitHub</li>
+            <li class="fragment">corrugatediron.org</li>
+            <li class="fragment">NuGet</li>
+            <li class="fragment">Misc</li>
+            <li class="fragment">Copyright</li>
+          </ul>
+          <aside class="notes">
             <ul>
-              <li class="fragment">GitHub</li>
-              <li class="fragment">corrugatediron.org</li>
-              <li class="fragment">NuGet</li>
-              <li class="fragment">Misc</li>
-              <li class="fragment">Copyright</li>
-            </ul>
-            <aside class="notes">
-              <ul>
-                <li>GitHub - one click</li>
-                <li>domain xferred with redirects</li>
-                <li>NuGet - new project</li>
-                <li>Misc - google analytics, CI builds (TeamCity)</li>
-                <li>IANAL - Copyright xfer</li>
-            </aside>
-          </section>
+              <li>GitHub - one click</li>
+              <li>domain xferred with redirects</li>
+              <li>NuGet - new project</li>
+              <li>Misc - google analytics, CI builds (TeamCity)</li>
+              <li>IANAL - Copyright xfer</li>
+          </aside>
         </section>
         <!-- introduction -->
 
         <section>
-          <section>
-            <h2>State of the Code</h2>
-            <h4>How's the code base holding up?</h4>
-          </section>
-          <section>
-            <h3>Licensing</h3>
-            <p>Apache 2.0</p>
-            <pre><code class="nohighlight">
+          <h2>State of the Code</h2>
+          <h4>How's the code base holding up?</h4>
+        </section>
+        <section>
+          <h3>Licensing</h3>
+          <p>Apache 2.0</p>
+          <pre><code class="nohighlight">
 // <copyright file="RiakClient.cs" company="Basho Technologies, Inc.">
 // Copyright (c) 2011 - OJ Reeves & Jeremiah Peschka
 // Copyright (c) 2014 - Basho Technologies, Inc.
@@ -143,216 +151,246 @@
 // specific language governing permissions and limitations
 // under the License.
 // </copyright>
-            </code></pre>
-          </section>
-          <section>
-            <h3>Hosting</h3>
-            <p><img src="images/github.png"></p>
-          </section>
-          <section>
-            <h3>Continuous Integration</h3>
-            <p><a href="https://travis-ci.org/basho/riak-dotnet-client">Travis CI</a></p>
-            <p>TeamCity</p>
-            <p><img height="384" src="images/sad-panda.jpg"></p>
-          </section>
-          <section>
-            <h3>Issue / Feature Tracking</h3>
-            <p><img src="images/github.png"</img></p>
-            <aside class="notes">
-              Many old open issues, PRs. Closed some PRs, politely
-            </aside>
-          </section>
-          <section>
-            <h3>Build Process</h3>
-            <p>Different scripts for each task:</p>
-            <p>
-              <ul>
-                <li>Building project</li>
-                <li>Publish release (manual steps)</li>
-                <li>Rebuild message classes from protobuf message files</li>
-              </ul>
-            </p>
-          </section>
-          <section>
-            <h3>Riak Support</h3>
-            <p>
-              <ul>
-                <li>1.4 series: 100%</li>
-                <li>2.0 series: 50%</li>
-              </ul>
-            </p>
-          </section>
+          </code></pre>
+        </section>
+        <section>
+          <h3>Hosting</h3>
+          <p><img src="images/github.png"></p>
+        </section>
+        <section>
+          <h3>Continuous Integration</h3>
+          <p><a href="https://travis-ci.org/basho/riak-dotnet-client">Travis CI</a></p>
+          <p>TeamCity</p>
+          <p><img height="384" src="images/sad-panda.jpg"></p>
+        </section>
+        <section>
+          <h3>Issue / Feature Tracking</h3>
+          <p><img src="images/github.png"</img></p>
+          <aside class="notes">
+            Many old open issues, PRs. Closed some PRs, politely
+          </aside>
+        </section>
+        <section>
+          <h3>Build Process</h3>
+          <p>Different scripts for each task:</p>
+          <p>
+            <ul>
+              <li>Building project</li>
+              <li>Publish release (manual steps)</li>
+              <li>Rebuild message classes from protobuf message files</li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <h3>Riak Support</h3>
+          <p>
+            <ul>
+              <li>1.4 series: 100%</li>
+              <li>2.0 series: 50%</li>
+            </ul>
+          </p>
         </section>
         <!-- state of the code -->
 
         <section>
-          <section>
-            <h2>Developer Improvements</h2>
-          </section>
-          <section>
-            <h3>Build Process</h3>
-            <p>Clone It And Build It™</p>
-            <p><img src="images/winning.jpg"></p>
-          </section>
-          <section>
-            <p>
-              <ul>
-                <li>Windows
-                  <ul>
-                    <li>Dependencies: .NET 4 Framework, Powershell</li>
-                    <li>Build: make.cmd/make.ps1 &amp; MSBuild</li>
-                  </ul>
-                </li>
-                <li>Mono
-                  <ul>
-                    <li>Dependencies: Mono 2.10, GNU Make</li>
-                    <li>Build: make &amp; xBuild</li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
-            <aside class="notes">
-              <ul>
-                <li>common build targets file</li>
-                <li>msbuild / xbuild default</li>
-                <li>GNU make / PowerShell driver</li>
-                <li>minimal deps - git only for rel builds</li>
-                <li>deps installed at build time via NuGet</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Code Analysis</h3>
-            <p>
-              <ul>
-                <li>StyleCop</li>
-                <li>FxCop (if present)</li>
-              </ul>
-            </p>
-            <aside class="notes">
-              <ul>
-                <li>StyleCop redistributable - committed</li>
-                <li>FxCop 12 part of VS, must have VS</li>
-                <li>Both catch issues early</li>
-                <li>FxCop insight into IDisposable</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Test Suite</h3>
-            <p><img src="images/nunit.gif"></p>
-            <aside class="notes">
-              <ul>
-                <li>nondeterministic tests / Riak / waiting</li>
-                <li>NUnit works / VS integration / no need to change</li>
-                <li>install everything via NuGet, incl runners</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Support Scripts</h3>
-            <p><a href="https://github.com/basho/riak-client-tools/blob/master/devrel/setup-dev-cluster">Riak Client Tools</a></p>
-            <p>
-              <ul>
-                <li>Set up Riak cluster</li>
-                <li>SSL Certificate Authority</li>
-              </ul>
-            </p>
-            <aside class="notes">
-              <ul>
-                <li>helps contributors</li>
-                <li>set up Riak cluster easily</li>
-                <li>generate SSL certs for Riak TLS testing</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Automation</h3>
-            <p><img src="images/big-red-button.png"></p>
-            <pre><code class="nohighlight">
+          <h2>Developer Improvements</h2>
+        </section>
+        <section>
+          <h3>Build Process</h3>
+          <p>Clone It And Build It™</p>
+          <p><img src="images/winning.jpg"></p>
+        </section>
+        <section>
+          <p>
+            <p><img src="images/ronco-rotisserie.jpg"></p>
+            <ul>
+              <li>Windows
+                <ul>
+                  <li>Dependencies: .NET 4 Framework, Powershell</li>
+                  <li>Build: make.cmd/make.ps1 &amp; MSBuild</li>
+                </ul>
+              </li>
+              <li>Mono
+                <ul>
+                  <li>Dependencies: Mono 2.10, GNU Make</li>
+                  <li>Build: make &amp; xBuild</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>common build targets file</li>
+              <li>msbuild / xbuild default</li>
+              <li>GNU make / PowerShell driver</li>
+              <li>minimal deps - git only for rel builds</li>
+              <li>deps installed at build time via NuGet</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Code Analysis</h3>
+          <p>
+            <ul>
+              <li>StyleCop</li>
+              <li>FxCop (if present)</li>
+            </ul>
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>StyleCop redistributable - committed</li>
+              <li>FxCop 12 part of VS, must have VS</li>
+              <li>Both catch issues early</li>
+              <li>FxCop insight into IDisposable</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Test Suite</h3>
+          <p><img src="images/nunit.gif"></p>
+          <aside class="notes">
+            <ul>
+              <li>nondeterministic tests / Riak / waiting</li>
+              <li>NUnit works / VS integration / no need to change</li>
+              <li>install everything via NuGet, incl runners</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Support Scripts</h3>
+          <p><a href="https://github.com/basho/riak-client-tools/blob/master/devrel/setup-dev-cluster">Riak Client Tools</a></p>
+          <p>
+            <ul>
+              <li>Set up Riak cluster</li>
+              <li>SSL Certificate Authority</li>
+            </ul>
+          </p>
+          <p><pre><code class="bash">
+pinfo "Starting Riak"
+
+for ((i = 1; i <= node_count; ++i))
+do
+    devdir="dev$i"
+    $devdir/bin/riak start
+done
+
+for ((i = 2; i <= node_count; ++i))
+do
+    devdir="dev$i"
+    $devdir/bin/riak-admin cluster join dev1@127.0.0.1
+done
+
+$riak_admin cluster plan
+$riak_admin cluster commit
+$riak_admin transfer-limit 16
+
+wait_for_transfers
+
+pinfo "Riak started, setting up bucket types"
+riak-cluster-config "$riak_admin" 10018 "$opt_strong_consistency" "$opt_use_security"
+pinfo "Done!"
+          </code></pre></p>
+          <aside class="notes">
+            <ul>
+              <li>helps contributors</li>
+              <li>set up Riak cluster easily</li>
+              <li>generate SSL certs for Riak TLS testing</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Automation</h3>
+          <p><img src="images/big-red-button.png"></p>
+          <pre><code class="nohighlight">
 C:\Users\lbakken\Projects\basho\riak-dotnet-client
 [develop]$ .\make.ps1 -Target Publish -VersionString v2.0.1
-            </code></pre>
-            <p><a href="https://www.nuget.org/packages/RiakClient/">NuGet</a></p>
-            <p><a href="https://github.com/basho/riak-dotnet-client/releases">GitHub</a></p>
-            <aside class="notes">
-              <ul>
-                <li>tag</li>
-                <li>create &amp; push NuGet</li>
-                <li>create zip &amp; push <a href="https://github.com/basho/riak-dotnet-client/releases">GitHub release</a></li>
-                <li>improvements - patch / maintenance releases</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Repository</h3>
-            <p><img src="images/BFG9000.png"></p>
-            <p><a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG for Git repositories</a></p>
-            <aside class="notes">
-              <ul>
-                <li>orig size &gt; 20MB</li>
-                <li>new size 4MB</li>
-                <li>faster CI builds</li>
-                <li>happier contributors</li>
-              </ul>
-            </aside>
-          </section>
+          </code></pre>
+          <p><a href="https://www.nuget.org/packages/RiakClient/">NuGet</a></p>
+          <p><a href="https://github.com/basho/riak-dotnet-client/releases">GitHub</a></p>
+          <aside class="notes">
+            <ul>
+              <li>tag</li>
+              <li>create &amp; push NuGet</li>
+              <li>create zip &amp; push <a href="https://github.com/basho/riak-dotnet-client/releases">GitHub release</a></li>
+              <li>improvements - patch / maintenance releases</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Repository</h3>
+          <p><img src="images/BFG9000.png"></p>
+          <p><a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG for Git repositories</a></p>
+          <aside class="notes">
+            <ul>
+              <li>orig size &gt; 20MB</li>
+              <li>new size 4MB</li>
+              <li>faster CI builds</li>
+              <li>happier contributors</li>
+            </ul>
+          </aside>
         </section>
         <!-- developer improvements -->
 
         <section>
-          <section>
-            <h2>End User Improvements</h2>
-          </section>
-          <section>
-            <h3>NuGet</h3>
-            <p>RiakClient created as new project</p>
-          </section>
-          <section>
-            <h3>Riak 2.0</h3>
-            <p>
-              <ul>
-                <li>New features: Security, Data Types, Search 2.0</li>
-                <li>99% backwards compatible API</li>
-                <li>Still Riak 1.4 compatible</li>
-              </ul>
-            </p>
-          </section>
-          <section>
-            <h3>CLS Compliance</h3>
-            <p><img src="images/no-one-cares.jpg"></p>
-            <p>Calling all F# developers...</p>
-          </section>
-          <section>
-            <h3>Documentation</h3>
-            <p><img src="images/drowning-in-docs.jpg"></p>
-          </section>
-          <section>
-            <h3>Documentation</h3>
-            <p>
-              <ul>
-                <li><a href="http://basho.github.io/riak-dotnet-client-api/index.html">Fully-documented API</a></li>
-                <li><a href="http://docs.basho.com/riak/latest/dev/taste-of-riak/csharp/">C# code examples on Basho Docs</a></li>
-                <li><a href="https://github.com/basho/riak-dotnet-client/wiki">GitHub Wiki</a></li>
-              </ul>
-            </p>
-          </section>
+          <h2>End User Improvements</h2>
+        </section>
+        <section>
+          <h3>NuGet</h3>
+          <p>RiakClient created as new project</p>
+          <p><img src="images/riak-dotnet-client-nuget.png"></p>
+        </section>
+        <section>
+          <h3>Riak 2.0</h3>
+          <p>
+            <ul>
+              <li>New features: Security, Data Types, Search 2.0</li>
+              <li>99% backwards compatible API</li>
+              <li>Still Riak 1.4 compatible</li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <h3>CLS Compliance</h3>
+          <p><img src="images/no-one-cares.jpg"></p>
+          <p>Calling all F# developers...</p>
+        </section>
+        <section>
+          <h3>Documentation</h3>
+          <p><img src="images/drowning-in-docs.jpg"></p>
+        </section>
+        <section>
+          <h3>Documentation</h3>
+          <p>Fully-documented API</p>
+          <p><img src="images/riak-client-api.png"></p>
+        </section>
+        <section>
+          <h3>Documentation</h3>
+          <p>C# code examples on Basho Docs</p>
+          <p><img src="images/taste-of-riak-csharp.png"></p>
+        </section>
+        <section>
+          <h3>Documentation</h3>
+          <p>GitHub Wiki</p>
+          <p><img src="images/riak-dotnet-client-wiki.png"></p>
         </section>
         <!-- end user improvements -->
 
         <section>
-          <section>
-            <h2>Summary</h2>
-          </section>
-          <section>
-            <h3>Documentation Matters</h3>
-            <p>#1 priority for end-user</p>
-          </section>
-          <section>
-            <h3>Project activity matters</h3>
-            <p><img src="images/riak-dotnet-client-repo-last-commit-checked.png"></p>
-            <p><img src="images/travis-ci-failed.png"></p>
-          </section>
+          <h2>Summary</h2>
+        </section>
+        <section>
+          <h3>Documentation Matters</h3>
+          <p>#1 priority for end-user</p>
+        </section>
+        <section>
+          <h3>Project activity matters</h3>
+          <p>Last Commit Date</p>
+          <p><img src="images/riak-dotnet-client-repo-last-commit-checked.png"></p>
+        </section>
+        <section>
+          <h3>Project activity matters</h3>
+          <p>Build Status</p>
+          <p><img src="images/riak-dotnet-client-build-status.png"></p>
         </section>
 
         <section>
