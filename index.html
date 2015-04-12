@@ -16,7 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<!-- link rel="stylesheet" href="css/theme/solarized.css" id="theme" -->
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<link rel="stylesheet" href="css/dotnetfringe.css" id="theme-dotnetfringe">
 
@@ -45,10 +45,11 @@
 			<div class="slides">
 
 				<section>
-					<h1>Stewardship of the Open-Source Riak .NET Client</h1>
-					<p>
-						<small><a href="http://bakken.io">Luke Bakken</a></small>
-					</p>
+					<h1>Stewardship of the Open Source Riak .NET Client</h1>
+          <p>
+            <small>Luke Bakken | Engineer at <a href="http://basho.com">Basho</a> | .NET Enthusiast</small><br>
+            <a href="http://github.com/lukebakken"><img src="images/github-256.png" style="width:5%;border:none;background:transparent;border-radius: 50%;"></a>
+          </p>
 				</section>
 
         <section>
@@ -65,8 +66,8 @@ Basho's supported clients for .NET and NodeJS
         </section>
 
         <section>
-          <h3>Stewardship</h3>
-          <p>Meeting the needs of your users</p>
+          <h2>Stewardship</h2>
+          <h4>Meeting the needs of your users</h4>
           <ul>
             <li class="fragment" data-fragment-index="0">End-Users</li>
             <li class="fragment" data-fragment-index="1">Contributors</li>
@@ -77,18 +78,21 @@ Basho's supported clients for .NET and NodeJS
         </section>
 
         <section>
-          <p><img src="images/riak-logo-color.png"></p>
+          <p><img src="images/riak-logo-white.png" style="width:50%;border:none;background:transparent;box-shadow:none"></p>
           <ul>
+            <li>Distributed NoSQL database</li>
             <li>Key/Value store</li>
-            <li>Map/Reduce, Indexing, Document Querying via Solr</li>
-            <li>CRDTs (conflict-free server-side data types)</li>
             <li>Masterless architecture</li>
+            <li>Built-in conflict resolution (CRDTs)</li>
             <li>High availability in failure scenarios</li>
+            <li>Map/Reduce, Indexing, Document Querying via Solr</li>
           </ul>
+          <aside class="notes">
+          </aside>
         </section>
 
         <section>
-          <h3>Corrugated Iron History</h3>
+          <h2>Corrugated Iron History</h2>
           <ul>
             <li>2011 01 - Started by Jeremiah Peschka and OJ Reeves</li>
             <li>2013 09 - 1.4.2 release</li>
@@ -101,12 +105,12 @@ Basho's supported clients for .NET and NodeJS
         </section>
 
         <section>
-          <h3>Transferring Ownership</h3>
+          <h2>Transferring Ownership</h2>
           <img src="images/grand-canyon-group-hike.jpg">
         </section>
 
         <section>
-          <h3>Transferring Ownership</h3>
+          <h2>Transferring Ownership</h2>
           <ul>
             <li class="fragment">GitHub</li>
             <li class="fragment">corrugatediron.org</li>
@@ -130,7 +134,7 @@ Basho's supported clients for .NET and NodeJS
           <h4>How's the code base holding up?</h4>
         </section>
         <section>
-          <h3>Licensing</h3>
+          <h2>Licensing</h2>
           <p>Apache 2.0</p>
           <pre><code class="nohighlight">
 // <copyright file="RiakClient.cs" company="Basho Technologies, Inc.">
@@ -154,24 +158,24 @@ Basho's supported clients for .NET and NodeJS
           </code></pre>
         </section>
         <section>
-          <h3>Hosting</h3>
+          <h2>Hosting</h2>
           <p><img src="images/github.png"></p>
         </section>
         <section>
-          <h3>Continuous Integration</h3>
+          <h2>Continuous Integration</h2>
           <p><a href="https://travis-ci.org/basho/riak-dotnet-client">Travis CI</a></p>
           <p>TeamCity</p>
           <p><img height="384" src="images/sad-panda.jpg"></p>
         </section>
         <section>
-          <h3>Issue / Feature Tracking</h3>
+          <h2>Issue / Feature Tracking</h2>
           <p><img src="images/github.png"</img></p>
           <aside class="notes">
             Many old open issues, PRs. Closed some PRs, politely
           </aside>
         </section>
         <section>
-          <h3>Build Process</h3>
+          <h2>Build Process</h2>
           <p>Different scripts for each task:</p>
           <p>
             <ul>
@@ -182,7 +186,7 @@ Basho's supported clients for .NET and NodeJS
           </p>
         </section>
         <section>
-          <h3>Riak Support</h3>
+          <h2>Riak Support</h2>
           <p>
             <ul>
               <li>1.4 series: 100%</li>
@@ -196,7 +200,7 @@ Basho's supported clients for .NET and NodeJS
           <h2>Developer Improvements</h2>
         </section>
         <section>
-          <h3>Build Process</h3>
+          <h2>Build Process</h2>
           <p>Clone It And Build It™</p>
           <p><img src="images/winning.jpg"></p>
         </section>
@@ -229,7 +233,7 @@ Basho's supported clients for .NET and NodeJS
           </aside>
         </section>
         <section>
-          <h3>Code Analysis</h3>
+          <h2>Code Analysis</h2>
           <p>
             <ul>
               <li>StyleCop</li>
@@ -246,7 +250,7 @@ Basho's supported clients for .NET and NodeJS
           </aside>
         </section>
         <section>
-          <h3>Test Suite</h3>
+          <h2>Test Suite</h2>
           <p><img src="images/nunit.gif"></p>
           <aside class="notes">
             <ul>
@@ -257,7 +261,7 @@ Basho's supported clients for .NET and NodeJS
           </aside>
         </section>
         <section>
-          <h3>Support Scripts</h3>
+          <h2>Support Scripts</h2>
           <p><a href="https://github.com/basho/riak-client-tools/blob/master/devrel/setup-dev-cluster">Riak Client Tools</a></p>
           <p>
             <ul>
@@ -299,14 +303,13 @@ pinfo "Done!"
           </aside>
         </section>
         <section>
-          <h3>Automation</h3>
-          <p><img src="images/big-red-button.png"></p>
+          <h2>Automation</h2>
+          <p><img src="images/automate.png"></p>
           <pre><code class="nohighlight">
 C:\Users\lbakken\Projects\basho\riak-dotnet-client
 [develop]$ .\make.ps1 -Target Publish -VersionString v2.0.1
           </code></pre>
-          <p><a href="https://www.nuget.org/packages/RiakClient/">NuGet</a></p>
-          <p><a href="https://github.com/basho/riak-dotnet-client/releases">GitHub</a></p>
+          <p><a href="https://www.nuget.org/packages/RiakClient/">NuGet</a> | <a href="https://github.com/basho/riak-dotnet-client/releases">GitHub</a></p>
           <aside class="notes">
             <ul>
               <li>tag</li>
@@ -317,9 +320,10 @@ C:\Users\lbakken\Projects\basho\riak-dotnet-client
           </aside>
         </section>
         <section>
-          <h3>Repository</h3>
-          <p><img src="images/BFG9000.png"></p>
+          <h2>Repository</h2>
+          <p><img src="images/bfg-repo-cleaner.png"></p>
           <p><a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG for Git repositories</a></p>
+          <p><img src="images/BFG9000.png" style="width:15%;"></p>
           <aside class="notes">
             <ul>
               <li>orig size &gt; 20MB</li>
@@ -335,12 +339,12 @@ C:\Users\lbakken\Projects\basho\riak-dotnet-client
           <h2>End User Improvements</h2>
         </section>
         <section>
-          <h3>NuGet</h3>
+          <h2>NuGet</h2>
           <p>RiakClient created as new project</p>
           <p><img src="images/riak-dotnet-client-nuget.png"></p>
         </section>
         <section>
-          <h3>Riak 2.0</h3>
+          <h2>Riak 2.0</h2>
           <p>
             <ul>
               <li>New features: Security, Data Types, Search 2.0</li>
@@ -350,26 +354,26 @@ C:\Users\lbakken\Projects\basho\riak-dotnet-client
           </p>
         </section>
         <section>
-          <h3>CLS Compliance</h3>
+          <h2>CLS Compliance</h2>
           <p><img src="images/no-one-cares.jpg"></p>
           <p>Calling all F# developers...</p>
         </section>
         <section>
-          <h3>Documentation</h3>
+          <h2>Documentation</h2>
           <p><img src="images/drowning-in-docs.jpg"></p>
         </section>
         <section>
-          <h3>Documentation</h3>
+          <h2>Documentation</h2>
           <p>Fully-documented API</p>
           <p><img src="images/riak-client-api.png"></p>
         </section>
         <section>
-          <h3>Documentation</h3>
+          <h2>Documentation</h2>
           <p>C# code examples on Basho Docs</p>
           <p><img src="images/taste-of-riak-csharp.png"></p>
         </section>
         <section>
-          <h3>Documentation</h3>
+          <h2>Documentation</h2>
           <p>GitHub Wiki</p>
           <p><img src="images/riak-dotnet-client-wiki.png"></p>
         </section>
@@ -379,18 +383,24 @@ C:\Users\lbakken\Projects\basho\riak-dotnet-client
           <h2>Summary</h2>
         </section>
         <section>
-          <h3>Documentation Matters</h3>
+          <h2>Documentation Matters</h2>
           <p>#1 priority for end-user</p>
         </section>
         <section>
-          <h3>Project activity matters</h3>
+          <h2>Project activity matters</h2>
           <p>Last Commit Date</p>
           <p><img src="images/riak-dotnet-client-repo-last-commit-checked.png"></p>
         </section>
         <section>
-          <h3>Project activity matters</h3>
+          <h2>Project activity matters</h2>
           <p>Build Status</p>
           <p><img src="images/riak-dotnet-client-build-status.png"></p>
+        </section>
+
+        <section>
+          <h2>Contributors Welcome</h2>
+          <p><img src="images/hugs.png" style="width:25%;"></p>
+          <p><a href="https://github.com/basho/riak-dotnet-client/blob/develop/CONTRIBUTING.md">CONTRIBUTING.md</a></p>
         </section>
 
         <section>
